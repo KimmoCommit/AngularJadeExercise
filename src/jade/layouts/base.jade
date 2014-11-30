@@ -1,0 +1,18 @@
+doctype html
+html(ng-app="elementApp" lang="en")
+	head
+		meta(content="text/html;charset=utf-8", http-equiv="Content-Type") 
+		meta(content="utf-8", http-equiv="encoding") 
+		//title(ng-bind="'App - ' + title") myapp
+		title(ng-bind="title")
+		base(href="/")
+	body
+		h1 helloo
+		div(ng-view)
+		script(src='lib/jquery-1.11.1.min.js')
+		script(src='lib/angular.js')
+		script(src="lib/angular-route.min.js")
+		script(src='/js/app.js')
+		
+		
+		
