@@ -4,12 +4,12 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 
 	$routeProvider
 	.when("/", {
-		templateUrl: '../views/other.html',
+		templateUrl: 'views/other.html',
 		title: 'Other',
 		controller:'elementController'
 	})
 	.when("/home", {
-		templateUrl: '../views/home.html',
+		templateUrl: 'views/home.html',
 		title:'Home',
 	})
 	.otherwise({ redirectTo: '/'});
@@ -19,7 +19,7 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 
 app.controller('elementController', ['$scope','$http', function($scope, $http){
 	$scope.elementCount = [];
-	$http.get('../res/elements.json').
+	$http.get('res/elements.json').
 	then(function(res){
 		$scope.elementCount = res.data;
 	});

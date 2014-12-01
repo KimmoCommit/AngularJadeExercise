@@ -5,14 +5,14 @@ html(ng-app="elementApp" lang="en")
 		meta(content="utf-8", http-equiv="encoding") 
 		//title(ng-bind="'App - ' + title") myapp
 		title(ng-bind="title")
-		base(href="/")
+		//base(href="your-project-root") if set to /, it will look from localhost/
 	body
 		h1 helloo
 		div(ng-view)
 		script(src='lib/jquery-1.11.1.min.js')
 		script(src='lib/angular.js')
 		script(src="lib/angular-route.min.js")
-		script(src='/js/app.js')
+		script(src='js/app.js')
 		
 		
 		
